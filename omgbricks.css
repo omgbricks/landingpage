@@ -5,20 +5,36 @@ body {
 	padding: 0;
 }
 
+a:link, a:visited {
+	color: #647AB7;
+}
+
 .container {
 	max-width: 800px;
-	margin: 0 auto;
+	margin: 96px auto 0 auto;
 	padding: 20px;
 }
 
 .header {
-	text-align: center;
+	position: fixed;
+	background-color: #38538C; 
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+	text-align: left;
 	margin-bottom: 20px;
+	padding: 4px 16px;
 }
 
 .header h1 {
-	color: #38538C;
+	display: inline-block;
+	color: #FFF;
 	font-size: 36px;
+}
+
+h2 {
+	font-size: 30px;
+	margin: 16px auto;
 }
 
 .app-icon {
@@ -28,20 +44,35 @@ body {
 	vertical-align: middle;
 }
 
+.app-store {
+	position: absolute;
+	right: 48px;
+	display: inline-block;
+	height: 48px;
+	vertical-align: middle;
+}
+
 .description {
 	text-align: center;
 	margin-bottom: 20px;
-	background-color: #38538C;
-	color: #FFF;
-	padding: 12px;
-	border-radius: 8px;
+	color: #38538C;
+	padding: 8px 12px;
 }
 
 .description p {
-	color: #FFF;
-	font-size: 18px;
+	font-size: 24px;
 	padding: 0;
 	margin: 0;
+}
+
+.primary-background {
+	background-color: #38538C;
+	color: #FFF;
+}
+
+.secondary-background {
+	background-color: #647AB7;
+	color: #FFF;
 }
 
 .app-screenshots {
@@ -56,7 +87,7 @@ body {
 }
 
 .app-screenshots .small-screenshot {
-	max-width: 200px;
+	max-width: 345px;
 	height: auto;
 	margin: 5px;
 }
@@ -66,7 +97,7 @@ body {
 	padding: 8px;
 }
 
-.app-download-link {
+.app-download-link, .app-download-link:visited {
 	display: inline-block;
 	padding: 10px 20px;
 	background-color: #38538C;
@@ -76,7 +107,7 @@ body {
 	border-radius: 5px;
 }
 
-.coming-soon-link {
+.coming-soon-link, .coming-soon-link:visited {
 	display: inline-block;
 	padding: 10px 20px;
 	background-color: #647AB7;
