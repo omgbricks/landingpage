@@ -230,7 +230,9 @@ input, select, textarea {
 	}
 
 	h3 {
-		font-size: 0.875rem;
+		font-size: 0.975rem;
+		color: #647ab7;
+		margin-top: 24px;
 	}
 
 	h4 {
